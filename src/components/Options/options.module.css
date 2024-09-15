@@ -1,0 +1,37 @@
+.container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  .button {
+    border: none;
+    background: none;
+    padding: 4px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    color: white;
+    transition: filter 0.3s ease;
+
+    &.good {
+      background: #22c55e;
+    }
+
+    &.neutral {
+      background: #6b7280;
+    }
+
+    &.bad {
+      background: #ef4444;
+    }
+
+    &.reset {
+      background: #3b82f6;
+    }
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}
